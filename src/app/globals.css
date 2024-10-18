@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+.font-roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.font-roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+/* #style-scrollbar::-webkit-scrollbar-track {
+
+}
+
+#style-scrollbar::-webkit-scrollbar {
+
+}
+
+#style-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0e0e0e;
+  border-radius: 10px;
+}
+
+#style-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #bdbdbd;
+  border-radius: 10px;
+} */
+
+#style-scrollbar::-webkit-scrollbar-track {
+  background: #424242;
+}
+
+#style-scrollbar::-webkit-scrollbar {
+  width: 16px;
+}
+
+#style-scrollbar::-webkit-scrollbar-thumb {
+  background: #686868;
+}
+
+#style-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #7b7b7b;
+}
+
+#style-scrollbar::-webkit-scrollbar-thumb:active {
+  background: #a1a1a1;
+}
+
+#style-scrollbar::-webkit-scrollbar-button {
+  background: #424242;
+  height: 16px;
+}
+
+#style-scrollbar::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>'); /* Panah atas */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#style-scrollbar::-webkit-scrollbar-button:vertical:increment {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>'); /* Panah bawah */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.spinner-animate {
+  animation: scaleAnimation 0.7s infinite alternate ease-in-out;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.6);
+  }
+}
